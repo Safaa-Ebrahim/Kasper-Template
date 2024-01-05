@@ -483,6 +483,9 @@ header nav .form i {
   border: none;
   text-transform: uppercase;
 }
+.video .text button:hover {
+  background-color: rgb(0 0 0 / 50%);
+}
 /* End Video  */
 /* Start About */
 .about {
@@ -801,6 +804,9 @@ header nav .form i {
   color: white;
   padding: 15px 30px;
 }
+.pricing .contact-link:hover {
+  background-color: var(--transparent-color);
+}
 /* End Pricing  */
 /* Start Supscribe */
 .supscribe {
@@ -858,6 +864,7 @@ header nav .form i {
   border: 1px solid white;
   border-left: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .supscribe form input[type="email"]:focus,
 .supscribe form input[type="submit"]:focus {
@@ -873,6 +880,7 @@ header nav .form i {
 @media (max-width: 991px) {
   .supscribe p {
     margin: 30px 0 0;
+    text-align: center;
   }
 }
 /* End Supscribe */
@@ -899,6 +907,7 @@ header nav .form i {
   border: 1px solid #ccc;
   margin-bottom: 30px;
   width: 100%;
+  caret-color: var(--main-color);
 }
 .contact .content form .main-input:focus {
   outline: none;
@@ -915,6 +924,9 @@ header nav .form i {
   margin-left: auto;
   text-transform: uppercase;
   cursor: pointer;
+}
+.contact .content form input[type="submit"]:hover {
+  background-color: var(--transparent-color);
 }
 .contact .content .info {
   flex-basis: 25%;
@@ -955,7 +967,7 @@ header nav .form i {
 }
 /* End Contact */
 /* Start Footer */
-.footer{
+.footer {
   padding-top: calc(var(--section-padding) / 2);
   padding-bottom: calc(var(--section-padding) / 2);
   background-image: url("../images/subscribe.jpg");
@@ -973,13 +985,13 @@ header nav .form i {
   height: 100%;
   background-color: rgb(0 0 0 / 70%);
 }
-.footer .container{
+.footer .container {
   position: relative;
 }
-.footer img{
+.footer img {
   margin-bottom: 20px;
 }
-.footer p:not(.copyright){
+.footer p:not(.copyright) {
   text-transform: uppercase;
   padding: 20px;
   border-bottom: 1px solid white;
@@ -987,13 +999,13 @@ header nav .form i {
   width: fit-content;
   margin: 20px auto;
 }
-.footer .social-icons i{
+.footer .social-icons i {
   padding: 10px 15px;
 }
-.footer .copyright{
-  margin-top:60px;
+.footer .copyright {
+  margin-top: 60px;
 }
-.footer .copyright span{
+.footer .copyright span {
   font-weight: bold;
   color: var(--main-color);
 }
